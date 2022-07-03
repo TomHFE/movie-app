@@ -185,7 +185,7 @@ const Details = () => {
 
   const requestDetails = async (movieID) => {
     const res = await fetch(
-      `http://www.omdbapi.com/?apikey=5d887735&i=${movieID}&plot=full`
+      `https://www.omdbapi.com/?apikey=5d887735&i=${movieID}&plot=full`
     );
     const data = await res.json();
     setinformation([data]);
