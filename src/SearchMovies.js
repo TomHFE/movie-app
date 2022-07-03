@@ -27,7 +27,7 @@ const SearchMovies = () => {
   useEffect(() => {
     SearchParams("Hello World");
   }, []);
-
+// trycatch look it up 
   const SearchParams = async (title) => {
     const res = await fetch(
       `http://www.omdbapi.com/?i=tt3896198&apikey=5d887735&s=${title}`
