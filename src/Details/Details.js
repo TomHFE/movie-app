@@ -180,6 +180,7 @@ const Details = () => {
 
   useEffect(() => {
     requestDetails(movieID);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const requestDetails = async (movieID) => {
